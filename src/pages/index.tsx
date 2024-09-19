@@ -1,7 +1,7 @@
 import AddTodo from '../components/AddTodo';
 import TodoList from '../components/TodoList';
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
       <h1>My Todo App</h1>
@@ -9,4 +9,6 @@ export default function Home() {
       <TodoList />
     </div>
   );
-}
+};
+
+export default Home;

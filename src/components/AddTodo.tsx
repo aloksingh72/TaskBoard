@@ -1,15 +1,18 @@
 import { useState } from 'react';
 
-function AddTodo() {
+const AddTodo = () => {
   const [title, setTitle] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const response = await fetch('/api/addTodo', {
+    if (!title) return;
+
+    await fetch('/api/todos/add', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ title }),
     });
+
     setTitle('');
   };
 
@@ -19,11 +22,11 @@ function AddTodo() {
         type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
-        placeholder="Add a new task"
+        placeholder="Add a new todo"
       />
       <button type="submit">Add Todo</button>
     </form>
   );
-}
+};
 
 export default AddTodo;
