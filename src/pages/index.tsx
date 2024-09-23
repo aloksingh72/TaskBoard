@@ -1,14 +1,11 @@
-import AddTodo from '../components/AddTodo';
-import TodoList from '../components/TodoList';
+// pages/index.tsx
+import TodoApp from '../components/TodoApp';
+import "../app/globals.css"
 
-const Home = () => {
+export default function Home() {
   return (
-    <div>
-      <h1>My Todo App</h1>
-      <AddTodo />
-      <TodoList />
-    </div>
-  );
-};
-
-export default Home;
+    <div className="  min-h-screen bg-gray-800  justify-center items-center text-white flex ">
+      <TodoApp />
+    </div>
+  );
+}
