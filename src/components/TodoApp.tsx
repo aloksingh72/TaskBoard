@@ -99,7 +99,7 @@ export default function TodoApp() {
     ))}
   </ul>
 
-  {/* No Todos Message */}
+  {/* if no  Todos  available Message */}
   {todos.length === 0 && (
     <div className="mt-6 text-center text-gray-500">
       <p>No tasks available. Start adding some!</p>
