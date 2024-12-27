@@ -37,10 +37,10 @@ export default function TodoApp() {
     else fetchTodos();
   };
 
-  // Delete a todo
+  // Delete a todo element
   const deleteTodo = async (id: string) => {
     const { error } = await supabase.from('todos').delete().eq('id', id);
-    if (error) console.error('Error deleting todo:', error.message);
+    if (error) console.error('Error in deleting todo:', error.message);
     else fetchTodos();
   };
 
