@@ -1,7 +1,7 @@
 // pages/index.tsx
 import TodoApp from '../components/TodoApp';
 import "../app/globals.css"
-
+// export home function 
 export default function Home() {
   return (
     <div className="  min-h-screen bg-gray-800  justify-center items-center text-white flex ">
