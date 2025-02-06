@@ -2,7 +2,7 @@ import '../../src/app/globals.css'
 //use state
 import { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabaseClient';
-
+//typescripting
 interface Todo {
   id: string;
   title: string;
