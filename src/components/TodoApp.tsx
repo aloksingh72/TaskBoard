@@ -8,7 +8,7 @@ interface Todo {
   title: string;
   is_complete: boolean;
 }
-
+//todo app function
 export default function TodoApp() {
   const [todos, setTodos] = useState<Todo[]>([]);
   const [newTodo, setNewTodo] = useState('');
