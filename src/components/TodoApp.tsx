@@ -1,3 +1,4 @@
+//_import
 import '../../src/app/globals.css'
 //use state
 import { useState, useEffect } from 'react';
